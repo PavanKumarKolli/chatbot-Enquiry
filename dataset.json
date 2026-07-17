@@ -1,0 +1,196 @@
+{
+  "greetings": {
+    "patterns": ["hi", "hello", "hey", "greetings", "good morning", "good afternoon", "good evening", "anybody there", "hola"],
+    "responses": [
+      "Hello! I am your AI assistant. How can I help you today? 😊",
+      "Hi there! Welcome! What's on your mind today? I'm always ready to chat.",
+      "Greetings! How may I assist you today? Hope you're having a wonderful day."
+    ]
+  },
+  "goodbyes": {
+    "patterns": ["bye", "goodbye", "exit", "quit", "stop", "see you later", "close", "end"],
+    "responses": [
+      "Thank you for chatting! Have a wonderful day ahead. Goodbye!",
+      "Goodbye! Feel free to start a new chat if you have more questions later.",
+      "It was a pleasure talking to you. Have a great day! Chat session closed."
+    ]
+  },
+  "help": {
+    "patterns": ["help", "what can you do", "menu", "info", "options", "commands"],
+    "responses": [
+      "I am a friendly assistant! You can talk to me about university details (like courses, fees, schedules, and contacts) or we can just chat and exchange jokes.\n\nType your message directly, or type **exit** to close the session."
+    ]
+  },
+  "courses": {
+    "patterns": [
+      "what courses do you offer",
+      "list all programs",
+      "available courses",
+      "computer science department",
+      "engineering streams",
+      "curriculum structure",
+      "undergraduate programs",
+      "degrees offered",
+      "cse ece it mechanical mba artificial intelligence"
+    ],
+    "responses": [
+      "We offer premium Undergraduate (B.Tech) and Postgraduate (M.Tech, MBA) programs:\n\n* **B.Tech Streams**: Computer Science & Engineering (CSE), Artificial Intelligence & Machine Learning (AI-ML), Data Science, Electronics & Communication (ECE), Information Technology (IT).\n* **Postgraduate Programs**: MBA (Finance, HR, Marketing) and M.Tech in Software Engineering.\n\nAll programs are fully accredited and feature modern, hands-on lab sessions."
+    ]
+  },
+  "course_details_cse": {
+    "patterns": [
+      "computer science course",
+      "cse details",
+      "btech cse syllabus",
+      "tell me about computer science"
+    ],
+    "responses": [
+      "Our B.Tech in **Computer Science & Engineering (CSE)** is a 4-year undergraduate program focusing on core software engineering, data structures, algorithms, cloud computing, and AI database systems. It features a comprehensive industry-aligned curriculum and comes with excellent placement opportunities."
+    ]
+  },
+  "course_details_ai": {
+    "patterns": [
+      "artificial intelligence course",
+      "ai ml details",
+      "data science course",
+      "aiml syllabus"
+    ],
+    "responses": [
+      "The B.Tech program in **Artificial Intelligence & Machine Learning (AI-ML)** and **Data Science** covers deep learning, neural networks, predictive analytics, statistics, and python programming. Students gain hands-on experience through project-based learning and industry collaborations."
+    ]
+  },
+  "fees": {
+    "patterns": [
+      "how much is the fee",
+      "tuition costs",
+      "course fee",
+      "btech fees details",
+      "mba fee",
+      "payment schedule",
+      "admission fees"
+    ],
+    "responses": [
+      "Here is the annual tuition fee structure:\n\n* **B.Tech (CSE, AI-ML, DS)**: $2,500 / ₹1,80,000 per year.\n* **B.Tech (ECE, IT, Mech)**: $2,200 / ₹1,50,000 per year.\n* **MBA**: $2,000 / ₹1,40,000 per year.\n\n*Note: Fees can be paid in two equal installments per semester. Exam and library fees are charged separately.*"
+    ]
+  },
+  "scholarships": {
+    "patterns": [
+      "scholarship details",
+      "financial aid",
+      "concessions",
+      "merit scholarship",
+      "fee waivers"
+    ],
+    "responses": [
+      "Yes! We offer generous merit-based and need-based scholarships:\n\n* **Merit-Based**: Up to 50% tuition fee waiver for students with academic scores above 90% in high school or top ranks in entrance exams.\n* **Sports/Extracurricular**: Up to 20% waiver for state/national level athletes.\n* **Financial Assistance**: Need-based aid is available upon review of family income certificates."
+    ]
+  },
+  "timings": {
+    "patterns": [
+      "class timings",
+      "college hours",
+      "what time do classes start",
+      "academic calendar",
+      "working days",
+      "weekend batches"
+    ],
+    "responses": [
+      "Our general academic timings are:\n\n* **Regular Batches (Mon - Fri)**: 9:00 AM to 4:00 PM (with a 45-minute lunch break at 12:30 PM).\n* **Saturday Hours**: 9:00 AM to 1:00 PM (primarily for laboratory exercises and club activities).\n* **Sundays**: Closed.\n\n*Note: Morning and evening shift options are available for postgraduate classes.*"
+    ]
+  },
+  "office_hours": {
+    "patterns": [
+      "office timings",
+      "administration hours",
+      "library hours",
+      "when is the library open"
+    ],
+    "responses": [
+      "Administrative and Facility Hours:\n\n* **Admissions Office**: Mon - Sat, 9:30 AM to 5:00 PM.\n* **Central Library**: Mon - Sat, 8:00 AM to 8:00 PM; Sundays, 10:00 AM to 4:00 PM.\n* **Faculty Consultation Hours**: Mon - Fri, 3:00 PM to 4:30 PM."
+    ]
+  },
+  "contact": {
+    "patterns": [
+      "how to contact",
+      "phone number",
+      "email address",
+      "where is the college located",
+      "office address",
+      "admission helpline",
+      "support mail"
+    ],
+    "responses": [
+      "You can reach us through multiple channels:\n\n* **Phone (Admissions)**: +1 (555) 019-2834 / +91 98765 43210\n* **Email**: admissions@university.edu / support@university.edu\n* **Address**: Golden Valley Campus, Science & Tech Boulevard, Suite 101, New Delhi - 110001\n* **Website**: www.university.edu/admissions"
+    ]
+  },
+  "chitchat_status": {
+    "patterns": [
+      "how are you",
+      "how is it going",
+      "how are you doing",
+      "are you fine",
+      "are you doing good"
+    ],
+    "responses": [
+      "I'm doing excellent, thank you! I'm here and ready to talk.",
+      "Doing great! I am fully powered and ready to answer your questions or just chat.",
+      "Fantastic! Thank you for asking. How is your day going? Let me know how I can help."
+    ]
+  },
+  "chitchat_identity": {
+    "patterns": [
+      "who are you",
+      "what is your name",
+      "what do you call yourself",
+      "tell me about yourself",
+      "are you a human",
+      "who made you"
+    ],
+    "responses": [
+      "I am **EduAssist AI**, a virtual advisor chatbot created to help answer academic details or just keep you company with a friendly conversation.",
+      "I'm your academic assistant bot. My job is to answer all your student queries and make sure you have a great conversation!"
+    ]
+  },
+  "chitchat_appreciation": {
+    "patterns": [
+      "thank you",
+      "thanks a lot",
+      "nice",
+      "awesome",
+      "great work",
+      "good job",
+      "cool",
+      "perfect",
+      "you are helpful"
+    ],
+    "responses": [
+      "You're very welcome! I'm glad I could help. What else is on your mind?",
+      "Happy to help! Let me know if you need anything else.",
+      "It's my pleasure! Hope you have a wonderful day.",
+      "Awesome! Glad you found it helpful. Feel free to chat more!"
+    ]
+  },
+  "chitchat_jokes": {
+    "patterns": [
+      "tell me a joke",
+      "make me laugh",
+      "do you know any jokes",
+      "say something funny",
+      "joke"
+    ],
+    "responses": [
+      "Why did the computer go to university? To get a byte to eat! 💻",
+      "Why do we tell actors to 'break a leg'? Because every play has a cast! 🎭",
+      "Why don't scientists trust atoms? Because they make up everything! ⚛️",
+      "Parallel lines have so much in common. It’s a shame they’ll never meet! 📐"
+    ]
+  },
+  "fallback": {
+    "patterns": [],
+    "responses": [
+      "I'm sorry, I didn't quite catch that. Could you please rephrase or tell me more? I'm always happy to talk! 😊",
+      "Hmm, I don't have information on that specific topic, but I'm down for a chat! What else would you like to talk about?",
+      "My apologies! I didn't understand. Could you explain it in another way? I'm here to listen."
+    ]
+  }
+}

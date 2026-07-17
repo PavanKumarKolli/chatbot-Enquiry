@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Query Chatbot | University Support</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="/static/style.css?v=1.1">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Panel for Quick Options and Info -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h1>EduAssist AI</h1>
+                </div>
+                <p class="sidebar-tagline">Student Information Desk</p>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="info-card">
+                    <h3>About Assistant</h3>
+                    <p>Welcome! I am an AI chatbot trained to resolve queries regarding university courses, fees, timetables, and contact details.</p>
+                </div>
+
+                <div class="quick-topics">
+                    <h3>Quick Queries</h3>
+                    <div class="topic-buttons">
+                        <button class="topic-btn" onclick="sendQuickQuery('What courses do you offer?')">
+                            <span>📚 Courses & Programs</span>
+                        </button>
+                        <button class="topic-btn" onclick="sendQuickQuery('What are the fees for B.Tech?')">
+                            <span>💳 Fee Structure</span>
+                        </button>
+                        <button class="topic-btn" onclick="sendQuickQuery('Do you offer scholarships?')">
+                            <span>🎓 Scholarships</span>
+                        </button>
+                        <button class="topic-btn" onclick="sendQuickQuery('What are the college timings?')">
+                            <span>⏱️ College Timings</span>
+                        </button>
+                        <button class="topic-btn" onclick="sendQuickQuery('How can I contact the admission office?')">
+                            <span>📞 Contact Admission</span>
+                        </button>
+                        <button class="topic-btn" onclick="sendQuickQuery('Help')">
+                            <span>❓ Show Commands</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <button class="exit-btn" id="sidebar-exit-btn">
+                    <svg class="exit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Exit Chat Session
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">
+                        <svg class="avatar-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12" fill="url(#gradient-avatar)"/>
+                            <path d="M12 6V18M12 6L8 10M12 6L16 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient-avatar" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00f2fe"/>
+                                    <stop offset="1" stop-color="#4facfe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="status-indicator online"></span>
+                    </div>
+                    <div>
+                        <h2>Academic Advisor Bot</h2>
+                        <p class="status-text">Online • Powered by AI Matching</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="clear-btn" id="clear-btn" title="Clear Chat">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Messages Window -->
+            <div class="chat-messages" id="chat-messages">
+                <!-- Welcome Message from Bot -->
+                <div class="message bot-message">
+                    <div class="message-bubble">
+                        Hello! Welcome! I am your virtual AI helper. 🎓
+                        <br><br>
+                        I am here to chat, answer questions, or help you find academic details.
+                        <br><br>
+                        How can I help you today?
+                    </div>
+                    <span class="message-time" id="welcome-time">12:00 PM</span>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator-container" id="typing-indicator">
+                <div class="typing-bubble">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+                <span class="typing-label">Bot is typing...</span>
+            </div>
+
+            <!-- Input Area -->
+            <footer class="chat-input-area">
+                <form id="chat-form" class="input-form">
+                    <input type="text" id="user-input" placeholder="Ask about courses, fees, timing or contact info..." autocomplete="off" required>
+                    <button type="submit" class="send-btn" id="send-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Exit Overlay Modal -->
+    <div class="modal-overlay" id="exit-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>Session Ended</h2>
+            </div>
+            <div class="modal-body">
+                <p>The chatbot session was closed successfully.</p>
+                <div class="summary-box">
+                    <p>Thank you for using EduAssist AI. If you have more questions, you can restart the session below.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="restart-btn" onclick="window.location.reload()">Restart Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="/static/script.js?v=1.1"></script>
+</body>
+</html>
