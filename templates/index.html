@@ -17,42 +17,40 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo-container">
-                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                     </svg>
-                    <h1>EduAssist AI</h1>
+                    <h1>BuddyAI</h1>
                 </div>
-                <p class="sidebar-tagline">Student Information Desk</p>
+                <p class="sidebar-tagline">Your Casual Chat Friend</p>
             </div>
             
             <div class="sidebar-content">
                 <div class="info-card">
                     <h3>About Assistant</h3>
-                    <p>Welcome! I am an AI chatbot trained to resolve queries regarding university courses, fees, timetables, and contact details.</p>
+                    <p>Welcome! I am BuddyAI, a friendly conversational companion here to talk with you, share jokes, offer relaxation tips, and help you destress. 🌟</p>
                 </div>
 
                 <div class="quick-topics">
                     <h3>Quick Queries</h3>
                     <div class="topic-buttons">
-                        <button class="topic-btn" onclick="sendQuickQuery('What courses do you offer?')">
-                            <span>📚 Courses & Programs</span>
+                        <button class="topic-btn" onclick="sendQuickQuery('Hii!')">
+                            <span>💬 Chat & Catch Up</span>
                         </button>
-                        <button class="topic-btn" onclick="sendQuickQuery('What are the fees for B.Tech?')">
-                            <span>💳 Fee Structure</span>
+                        <button class="topic-btn" onclick="sendQuickQuery('Can you help me relax?')">
+                            <span>🌿 Help Me Relax</span>
                         </button>
-                        <button class="topic-btn" onclick="sendQuickQuery('Do you offer scholarships?')">
-                            <span>🎓 Scholarships</span>
+                        <button class="topic-btn" onclick="sendQuickQuery('Tell me a joke!')">
+                            <span>🎈 Tell Me a Joke</span>
                         </button>
-                        <button class="topic-btn" onclick="sendQuickQuery('What are the college timings?')">
-                            <span>⏱️ College Timings</span>
+                        <button class="topic-btn" onclick="sendQuickQuery('I had a rough day today.')">
+                            <span>💭 Vent / Rough Day</span>
                         </button>
-                        <button class="topic-btn" onclick="sendQuickQuery('How can I contact the admission office?')">
-                            <span>📞 Contact Admission</span>
+                        <button class="topic-btn" onclick="sendQuickQuery('Who are you?')">
+                            <span>⭐ Who are you?</span>
                         </button>
                         <button class="topic-btn" onclick="sendQuickQuery('Help')">
-                            <span>❓ Show Commands</span>
+                            <span>❓ What can we do?</span>
                         </button>
                     </div>
                 </div>
@@ -77,7 +75,7 @@
                     <div class="bot-avatar">
                         <svg class="avatar-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="24" height="24" rx="12" fill="url(#gradient-avatar)"/>
-                            <path d="M12 6V18M12 6L8 10M12 6L16 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <defs>
                                 <linearGradient id="gradient-avatar" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#00f2fe"/>
@@ -88,8 +86,8 @@
                         <span class="status-indicator online"></span>
                     </div>
                     <div>
-                        <h2>Academic Advisor Bot</h2>
-                        <p class="status-text">Online • Powered by AI Matching</p>
+                        <h2>BuddyAI</h2>
+                        <p class="status-text">Online • Your Friendly Companion</p>
                     </div>
                 </div>
                 <div class="header-actions">
@@ -107,11 +105,11 @@
                 <!-- Welcome Message from Bot -->
                 <div class="message bot-message">
                     <div class="message-bubble">
-                        Hello! Welcome! I am your virtual AI helper. 🎓
+                        Hii! Welcome! I am **BuddyAI**, your friendly chat companion. 😊
                         <br><br>
-                        I am here to chat, answer questions, or help you find academic details.
+                        Whether you want to share how your day went, get quick tips to relax, hear a funny joke, or just have a comfortable chat, I'm here for you!
                         <br><br>
-                        How can I help you today?
+                        How are you doing today?
                     </div>
                     <span class="message-time" id="welcome-time">12:00 PM</span>
                 </div>
@@ -130,7 +128,7 @@
             <!-- Input Area -->
             <footer class="chat-input-area">
                 <form id="chat-form" class="input-form">
-                    <input type="text" id="user-input" placeholder="Ask about courses, fees, timing or contact info..." autocomplete="off" required>
+                    <input type="text" id="user-input" placeholder="Type a message to chat or unwind..." autocomplete="off" required>
                     <button type="submit" class="send-btn" id="send-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -151,7 +149,7 @@
             <div class="modal-body">
                 <p>The chatbot session was closed successfully.</p>
                 <div class="summary-box">
-                    <p>Thank you for using EduAssist AI. If you have more questions, you can restart the session below.</p>
+                    <p>Thank you for chatting with BuddyAI. If you want to talk more, you can restart the session below.</p>
                 </div>
             </div>
             <div class="modal-footer">

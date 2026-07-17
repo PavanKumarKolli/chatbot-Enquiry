@@ -1,126 +1,24 @@
 {
   "greetings": {
-    "patterns": ["hi", "hello", "hey", "greetings", "good morning", "good afternoon", "good evening", "anybody there", "hola"],
+    "patterns": ["hi", "hello", "hey", "hii", "hiii", "greetings", "anyone there", "hola", "yo"],
     "responses": [
-      "Hello! I am your AI assistant. How can I help you today? 😊",
-      "Hi there! Welcome! What's on your mind today? I'm always ready to chat.",
-      "Greetings! How may I assist you today? Hope you're having a wonderful day."
+      "Hii! Nice to talk to you! How are you feeling today? 😊",
+      "Hey there! It's so nice to talk to you. How is your day going?",
+      "Hii! So glad you messaged. How are things going with you today?"
     ]
   },
   "goodbyes": {
-    "patterns": ["bye", "goodbye", "exit", "quit", "stop", "see you later", "close", "end"],
+    "patterns": ["bye", "goodbye", "exit", "quit", "stop", "see you later", "close", "end", "talk to you later"],
     "responses": [
-      "Thank you for chatting! Have a wonderful day ahead. Goodbye!",
-      "Goodbye! Feel free to start a new chat if you have more questions later.",
-      "It was a pleasure talking to you. Have a great day! Chat session closed."
+      "Goodbye! Take care of yourself and remember to get some good rest. See you next time! 👋",
+      "Bye! Remember to take things easy and destress. Talk to you soon!",
+      "It was a real pleasure chatting with you. Have a wonderful, relaxing day ahead!"
     ]
   },
   "help": {
     "patterns": ["help", "what can you do", "menu", "info", "options", "commands"],
     "responses": [
-      "I am a friendly assistant! You can talk to me about university details (like courses, fees, schedules, and contacts) or we can just chat and exchange jokes.\n\nType your message directly, or type **exit** to close the session."
-    ]
-  },
-  "courses": {
-    "patterns": [
-      "what courses do you offer",
-      "list all programs",
-      "available courses",
-      "computer science department",
-      "engineering streams",
-      "curriculum structure",
-      "undergraduate programs",
-      "degrees offered",
-      "cse ece it mechanical mba artificial intelligence"
-    ],
-    "responses": [
-      "We offer premium Undergraduate (B.Tech) and Postgraduate (M.Tech, MBA) programs:\n\n* **B.Tech Streams**: Computer Science & Engineering (CSE), Artificial Intelligence & Machine Learning (AI-ML), Data Science, Electronics & Communication (ECE), Information Technology (IT).\n* **Postgraduate Programs**: MBA (Finance, HR, Marketing) and M.Tech in Software Engineering.\n\nAll programs are fully accredited and feature modern, hands-on lab sessions."
-    ]
-  },
-  "course_details_cse": {
-    "patterns": [
-      "computer science course",
-      "cse details",
-      "btech cse syllabus",
-      "tell me about computer science"
-    ],
-    "responses": [
-      "Our B.Tech in **Computer Science & Engineering (CSE)** is a 4-year undergraduate program focusing on core software engineering, data structures, algorithms, cloud computing, and AI database systems. It features a comprehensive industry-aligned curriculum and comes with excellent placement opportunities."
-    ]
-  },
-  "course_details_ai": {
-    "patterns": [
-      "artificial intelligence course",
-      "ai ml details",
-      "data science course",
-      "aiml syllabus"
-    ],
-    "responses": [
-      "The B.Tech program in **Artificial Intelligence & Machine Learning (AI-ML)** and **Data Science** covers deep learning, neural networks, predictive analytics, statistics, and python programming. Students gain hands-on experience through project-based learning and industry collaborations."
-    ]
-  },
-  "fees": {
-    "patterns": [
-      "how much is the fee",
-      "tuition costs",
-      "course fee",
-      "btech fees details",
-      "mba fee",
-      "payment schedule",
-      "admission fees"
-    ],
-    "responses": [
-      "Here is the annual tuition fee structure:\n\n* **B.Tech (CSE, AI-ML, DS)**: $2,500 / ₹1,80,000 per year.\n* **B.Tech (ECE, IT, Mech)**: $2,200 / ₹1,50,000 per year.\n* **MBA**: $2,000 / ₹1,40,000 per year.\n\n*Note: Fees can be paid in two equal installments per semester. Exam and library fees are charged separately.*"
-    ]
-  },
-  "scholarships": {
-    "patterns": [
-      "scholarship details",
-      "financial aid",
-      "concessions",
-      "merit scholarship",
-      "fee waivers"
-    ],
-    "responses": [
-      "Yes! We offer generous merit-based and need-based scholarships:\n\n* **Merit-Based**: Up to 50% tuition fee waiver for students with academic scores above 90% in high school or top ranks in entrance exams.\n* **Sports/Extracurricular**: Up to 20% waiver for state/national level athletes.\n* **Financial Assistance**: Need-based aid is available upon review of family income certificates."
-    ]
-  },
-  "timings": {
-    "patterns": [
-      "class timings",
-      "college hours",
-      "what time do classes start",
-      "academic calendar",
-      "working days",
-      "weekend batches"
-    ],
-    "responses": [
-      "Our general academic timings are:\n\n* **Regular Batches (Mon - Fri)**: 9:00 AM to 4:00 PM (with a 45-minute lunch break at 12:30 PM).\n* **Saturday Hours**: 9:00 AM to 1:00 PM (primarily for laboratory exercises and club activities).\n* **Sundays**: Closed.\n\n*Note: Morning and evening shift options are available for postgraduate classes.*"
-    ]
-  },
-  "office_hours": {
-    "patterns": [
-      "office timings",
-      "administration hours",
-      "library hours",
-      "when is the library open"
-    ],
-    "responses": [
-      "Administrative and Facility Hours:\n\n* **Admissions Office**: Mon - Sat, 9:30 AM to 5:00 PM.\n* **Central Library**: Mon - Sat, 8:00 AM to 8:00 PM; Sundays, 10:00 AM to 4:00 PM.\n* **Faculty Consultation Hours**: Mon - Fri, 3:00 PM to 4:30 PM."
-    ]
-  },
-  "contact": {
-    "patterns": [
-      "how to contact",
-      "phone number",
-      "email address",
-      "where is the college located",
-      "office address",
-      "admission helpline",
-      "support mail"
-    ],
-    "responses": [
-      "You can reach us through multiple channels:\n\n* **Phone (Admissions)**: +1 (555) 019-2834 / +91 98765 43210\n* **Email**: admissions@university.edu / support@university.edu\n* **Address**: Golden Valley Campus, Science & Tech Boulevard, Suite 101, New Delhi - 110001\n* **Website**: www.university.edu/admissions"
+      "I am your friendly chat companion! Here are things we can do:\n\n1. **Casual Chat**: Ask me how I am, tell me about your day, or let's catch up.\n2. **De-stress & Vent**: Tell me if you are stressed or had a rough day. I'm here to listen.\n3. **Jokes & Fun**: Ask me for a joke to lighten the mood!\n4. **Relaxation**: Ask me for tips on how to unwind or take a quick breathing break."
     ]
   },
   "chitchat_status": {
@@ -129,12 +27,13 @@
       "how is it going",
       "how are you doing",
       "are you fine",
-      "are you doing good"
+      "are you doing good",
+      "how's life"
     ],
     "responses": [
-      "I'm doing excellent, thank you! I'm here and ready to talk.",
-      "Doing great! I am fully powered and ready to answer your questions or just chat.",
-      "Fantastic! Thank you for asking. How is your day going? Let me know how I can help."
+      "I'm doing wonderful, thank you for asking! Just happy to be chatting with you right now.",
+      "Doing great! I am fully powered up and ready to chat. How is everything on your end?",
+      "Fantastic! Talking with you always makes my day. How has your day been going?"
     ]
   },
   "chitchat_identity": {
@@ -144,11 +43,12 @@
       "what do you call yourself",
       "tell me about yourself",
       "are you a human",
-      "who made you"
+      "who made you",
+      "what are you"
     ],
     "responses": [
-      "I am **EduAssist AI**, a virtual advisor chatbot created to help answer academic details or just keep you company with a friendly conversation.",
-      "I'm your academic assistant bot. My job is to answer all your student queries and make sure you have a great conversation!"
+      "I am **BuddyAI**, your friendly chat companion! I'm here to listen, help you unwind, and keep you company whenever you need a relaxing break.",
+      "Think of me as a digital friend! I'm here to have normal, stress-free conversations and help you destress."
     ]
   },
   "chitchat_appreciation": {
@@ -161,13 +61,14 @@
       "good job",
       "cool",
       "perfect",
-      "you are helpful"
+      "you are helpful",
+      "thanks buddy"
     ],
     "responses": [
-      "You're very welcome! I'm glad I could help. What else is on your mind?",
-      "Happy to help! Let me know if you need anything else.",
-      "It's my pleasure! Hope you have a wonderful day.",
-      "Awesome! Glad you found it helpful. Feel free to chat more!"
+      "You're very welcome! I'm always happy to talk to you. What else is on your mind? 😊",
+      "Anytime! I'm glad I could help. Remember to take care of yourself!",
+      "It's my pleasure! Chatting with you is always the highlight of my day.",
+      "Awesome! Glad you liked that. Feel free to talk about whatever you want!"
     ]
   },
   "chitchat_jokes": {
@@ -176,21 +77,80 @@
       "make me laugh",
       "do you know any jokes",
       "say something funny",
-      "joke"
+      "joke",
+      "jokes"
     ],
     "responses": [
-      "Why did the computer go to university? To get a byte to eat! 💻",
-      "Why do we tell actors to 'break a leg'? Because every play has a cast! 🎭",
       "Why don't scientists trust atoms? Because they make up everything! ⚛️",
-      "Parallel lines have so much in common. It’s a shame they’ll never meet! 📐"
+      "What do you call a fake noodle? An impasta! 🍝",
+      "Why did the scarecrow win an award? Because he was outstanding in his field! 🌾",
+      "Why do we tell actors to 'break a leg'? Because every play has a cast! 🎭",
+      "Why did the computer go to university? To get a byte to eat! 💻"
+    ]
+  },
+  "stress_comfort": {
+    "patterns": [
+      "stressed",
+      "im stressed",
+      "tired",
+      "im tired",
+      "exhausted",
+      "anxious",
+      "sad",
+      "overwhelmed",
+      "bad day",
+      "rough day",
+      "stressing out",
+      "feeling down"
+    ],
+    "responses": [
+      "I'm really sorry you're feeling stressed or overwhelmed. It's completely okay to feel tired. Take a slow, deep breath. Do you want to talk about what's going on? I'm right here to listen. 💙",
+      "Rough days are hard, and it's okay not to be okay. Remember to be gentle with yourself. If you want to vent or get anything off your chest, feel free to type it out. I'm here for you.",
+      "Take a moment to relax your shoulders, unclench your jaw, and take a deep breath. You're doing the best you can under a lot of pressure, and that is more than enough."
+    ]
+  },
+  "relax_tips": {
+    "patterns": [
+      "relax",
+      "help me relax",
+      "how to unwind",
+      "calm down",
+      "tips for stress",
+      "unwind",
+      "breathing break",
+      "relaxing ideas"
+    ],
+    "responses": [
+      "Let's try a quick breathing break: breathe in slowly for 4 seconds, hold for 4 seconds, and exhale for 4 seconds. Repeat this twice. How does that make you feel? 🌿",
+      "Here are some easy ways to unwind right now:\n* Step away from screens for 5 minutes.\n* Stretch your arms and neck slowly.\n* Sip a glass of cold water or warm tea.\n* Listen to a favorite instrumental track.",
+      "Sometimes getting up, moving around, or stepping outside for fresh air can instantly clear your mind. Remember, your peace of mind is always the priority."
+    ]
+  },
+  "chitchat_user_status": {
+    "patterns": [
+      "good",
+      "fine",
+      "ok",
+      "doing well",
+      "happy",
+      "great",
+      "doing good",
+      "not bad",
+      "im fine",
+      "im good"
+    ],
+    "responses": [
+      "That's wonderful to hear! I'm really glad things are going well for you today. 😊 What's been the best part of your day so far?",
+      "Glad to hear you are doing good! Keep that positive vibe going. What are you planning to do for the rest of the day?",
+      "Not bad is a good start! Hope the rest of your day brings you peace and happiness."
     ]
   },
   "fallback": {
     "patterns": [],
     "responses": [
-      "I'm sorry, I didn't quite catch that. Could you please rephrase or tell me more? I'm always happy to talk! 😊",
-      "Hmm, I don't have information on that specific topic, but I'm down for a chat! What else would you like to talk about?",
-      "My apologies! I didn't understand. Could you explain it in another way? I'm here to listen."
+      "I hear you! Tell me more about that. I'm listening. 😊",
+      "That sounds interesting. How does that make you feel?",
+      "I'm here for you. Whatever is on your mind, feel free to share, or we can just chat about whatever makes you comfortable!"
     ]
   }
 }
