@@ -78,6 +78,14 @@ class StudentChatbot:
 
         # High priority keywords to boost specific categories
         keyword_boosts = {
+            "courses": ["course", "program", "stream", "branch", "btech", "mtech", "mba", "curriculum", "degree"],
+            "course_details_cse": ["cse", "computer science", "software", "programming", "coding"],
+            "course_details_ai": ["ai", "ml", "artificial intelligence", "machine learning", "data science", "ds"],
+            "fees": ["fee", "fees", "cost", "costs", "tuition", "price", "charge", "charges", "pay", "payment"],
+            "scholarships": ["scholarship", "scholarships", "concession", "concessions", "financial aid", "waiver", "waivers"],
+            "timings": ["timing", "timings", "time", "hours", "hour", "schedule", "calendar", "when", "days", "shift"],
+            "office_hours": ["office hours", "library", "admin", "administration", "consultation"],
+            "contact": ["contact", "phone", "number", "email", "mail", "address", "call", "location", "where", "reach"],
             "chitchat_status": ["how are you", "doing", "going", "feeling", "ok", "fine", "good"],
             "chitchat_identity": ["who are you", "your name", "about yourself", "who is", "creator", "bot", "assistant", "what are you"],
             "chitchat_appreciation": ["thank", "thanks", "nice", "awesome", "great", "cool", "perfect", "helpful", "good job", "buddy"],

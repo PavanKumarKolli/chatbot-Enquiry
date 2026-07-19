@@ -4,7 +4,7 @@
     "responses": [
       "Hii! Nice to talk to you! How are you feeling today? 😊",
       "Hey there! It's so nice to talk to you. How is your day going?",
-      "Hii! So glad you messaged. How are things going with you today?"
+      "Hii! So glad you messaged. How can I help you today?"
     ]
   },
   "goodbyes": {
@@ -18,7 +18,109 @@
   "help": {
     "patterns": ["help", "what can you do", "menu", "info", "options", "commands"],
     "responses": [
-      "I am your friendly chat companion! Here are things we can do:\n\n1. **Casual Chat**: Ask me how I am, tell me about your day, or let's catch up.\n2. **De-stress & Vent**: Tell me if you are stressed or had a rough day. I'm here to listen.\n3. **Jokes & Fun**: Ask me for a joke to lighten the mood!\n4. **Relaxation**: Ask me for tips on how to unwind or take a quick breathing break."
+      "I am your friendly chat companion! Here are things I can answer for you:\n\n1. **Courses & Programs**: B.Tech, MBA, CSE, AI-ML streams and curriculum.\n2. **Tuition Fees**: Cost details, scholarship options, and merit concessions.\n3. **Timings**: Class hours, administrative office timing, and library schedules.\n4. **Contact Info**: Phone numbers, email, and campus locations.\n5. **Relax & Chat**: Ask me for a joke, tell me about a rough day, or just say hello!"
+    ]
+  },
+  "courses": {
+    "patterns": [
+      "what courses do you offer",
+      "list all programs",
+      "available courses",
+      "computer science department",
+      "engineering streams",
+      "curriculum structure",
+      "undergraduate programs",
+      "degrees offered",
+      "cse ece it mechanical mba artificial intelligence"
+    ],
+    "responses": [
+      "We offer premium Undergraduate (B.Tech) and Postgraduate (M.Tech, MBA) programs:\n\n* **B.Tech Streams**: Computer Science & Engineering (CSE), Artificial Intelligence & Machine Learning (AI-ML), Data Science, Electronics & Communication (ECE), Information Technology (IT).\n* **Postgraduate Programs**: MBA (Finance, HR, Marketing) and M.Tech in Software Engineering.\n\nAll programs are fully accredited and feature modern, hands-on lab sessions."
+    ]
+  },
+  "course_details_cse": {
+    "patterns": [
+      "computer science course",
+      "cse details",
+      "btech cse syllabus",
+      "tell me about computer science"
+    ],
+    "responses": [
+      "Our B.Tech in **Computer Science & Engineering (CSE)** is a 4-year undergraduate program focusing on core software engineering, data structures, algorithms, cloud computing, and AI database systems. It features a comprehensive industry-aligned curriculum and comes with excellent placement opportunities."
+    ]
+  },
+  "course_details_ai": {
+    "patterns": [
+      "artificial intelligence course",
+      "ai ml details",
+      "data science course",
+      "aiml syllabus"
+    ],
+    "responses": [
+      "The B.Tech program in **Artificial Intelligence & Machine Learning (AI-ML)** and **Data Science** covers deep learning, neural networks, predictive analytics, statistics, and python programming. Students gain hands-on experience through project-based learning and industry collaborations."
+    ]
+  },
+  "fees": {
+    "patterns": [
+      "how much is the fee",
+      "tuition costs",
+      "course fee",
+      "btech fees details",
+      "mba fee",
+      "payment schedule",
+      "admission fees"
+    ],
+    "responses": [
+      "Here is the annual tuition fee structure:\n\n* **B.Tech (CSE, AI-ML, DS)**: $2,500 / ₹1,80,000 per year.\n* **B.Tech (ECE, IT, Mech)**: $2,200 / ₹1,50,000 per year.\n* **MBA**: $2,000 / ₹1,40,000 per year.\n\n*Note: Fees can be paid in two equal installments per semester. Exam and library fees are charged separately.*"
+    ]
+  },
+  "scholarships": {
+    "patterns": [
+      "scholarship details",
+      "financial aid",
+      "concessions",
+      "merit scholarship",
+      "fee waivers"
+    ],
+    "responses": [
+      "Yes! We offer generous merit-based and need-based scholarships:\n\n* **Merit-Based**: Up to 50% tuition fee waiver for students with academic scores above 90% in high school or top ranks in entrance exams.\n* **Sports/Extracurricular**: Up to 20% waiver for state/national level athletes.\n* **Financial Assistance**: Need-based aid is available upon review of family income certificates."
+    ]
+  },
+  "timings": {
+    "patterns": [
+      "class timings",
+      "college hours",
+      "what time do classes start",
+      "academic calendar",
+      "working days",
+      "weekend batches"
+    ],
+    "responses": [
+      "Our general academic timings are:\n\n* **Regular Batches (Mon - Fri)**: 9:00 AM to 4:00 PM (with a 45-minute lunch break at 12:30 PM).\n* **Saturday Hours**: 9:00 AM to 1:00 PM (primarily for laboratory exercises and club activities).\n* **Sundays**: Closed.\n\n*Note: Morning and evening shift options are available for postgraduate classes.*"
+    ]
+  },
+  "office_hours": {
+    "patterns": [
+      "office timings",
+      "administration hours",
+      "library hours",
+      "when is the library open"
+    ],
+    "responses": [
+      "Administrative and Facility Hours:\n\n* **Admissions Office**: Mon - Sat, 9:30 AM to 5:00 PM.\n* **Central Library**: Mon - Sat, 8:00 AM to 8:00 PM; Sundays, 10:00 AM to 4:00 PM.\n* **Faculty Consultation Hours**: Mon - Fri, 3:00 PM to 4:30 PM."
+    ]
+  },
+  "contact": {
+    "patterns": [
+      "how to contact",
+      "phone number",
+      "email address",
+      "where is the college located",
+      "office address",
+      "admission helpline",
+      "support mail"
+    ],
+    "responses": [
+      "You can reach us through multiple channels:\n\n* **Phone (Admissions)**: +1 (555) 019-2834 / +91 98765 43210\n* **Email**: admissions@university.edu / support@university.edu\n* **Address**: Golden Valley Campus, Science & Tech Boulevard, Suite 101, New Delhi - 110001\n* **Website**: www.university.edu/admissions"
     ]
   },
   "chitchat_status": {
@@ -47,8 +149,8 @@
       "what are you"
     ],
     "responses": [
-      "I am **BuddyAI**, your friendly chat companion! I'm here to listen, help you unwind, and keep you company whenever you need a relaxing break.",
-      "Think of me as a digital friend! I'm here to have normal, stress-free conversations and help you destress."
+      "I am **BuddyAI**, your friendly chat companion! I'm here to listen, help you unwind, and answer your university queries about courses, fees, and timings.",
+      "Think of me as a digital friend! I'm here to answer your questions about the college and have comfortable, stress-free conversations."
     ]
   },
   "chitchat_appreciation": {
